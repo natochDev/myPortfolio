@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/yes-icon.png" type="image/x-icon">
+
+    <!-- css style link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav>
+        <a href="#header"><img src="images/logo.jpg" class="logo"></a>
+        <ul id="sideMenu">
+            <li><a href="#header" class="nav-home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+
+    <!-- ========== HEADER ========== -->
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>
+                    Hi, I'm <span>Phanna</span><br> From Cambodia
+                </h1>
+            </div>
+        </div>
+        <!-- <div class="back-top">
+            <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+        </div> -->
+    </div>
+
+    <!-- ========== ABOUT ========== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        As a passionate and self-motivated individual, 
+                        I am seeking a frontend developer position to apply my technical skills 
+                        and knowledge in a professional environment. Eager to contribute to 
+                        dynamic projects and continuously enhance my abilities in web development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Design</span><br>HTML, CSS, JavaScript and Bootstrap</li>
+                            <li><span>Graphic Design</span><br>Adobe Photoshop and CorelDraw</li>
+                            <li><span>Hosting Service</span><br>Experience with hosting platform like GitHub.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Oct 2022 - Jan 2024</span><br>Bachelor's Degree (Major: Information Technology)</li>
+                            <li><span>Oct 2018 - Apr 2022</span><br>Associate Degree (Major: Information Technology)</li>
+                            <li><span>Dec 2015 - Aug 2018</span><br>High School Certificate (Passed Grade 12)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Mar, 2024</span><br>Certificate of Bachelor's Degree (Major: IT)</li>
+                            <li><span>Jul, 2022</span><br>Certificate of Associate Degree (Major: IT)</li>
+                            <li><span>Aug, 2018</span><br>HIgh School Certificate (Passed Grade 12)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== SERVICES ========== -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Creating website solutions that deliver tangible business results, 
+                        helps brands the ever-changing digital landscape.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <p>
+                        Creating posters, banners, logos, and brand names for businesses and companies.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h2>E-Commerce</h2>
+                    <p>
+                        Web shop design development for globally renowned online businesses.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Web Design</h3>
+                        <p>
+                            Designing websites in a solutions company.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Graphic Design</h3>
+                        <p>
+                            Design posters or projects at home when I'm free time.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/e-commerce.jpg">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>
+                            Create e-commerce websites for businesses and online stores.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">
+                See more
+                <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 5px;"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- ========== CONTACT ========== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>
+                        <a href="mailto:phannayorng67@gmail.com">
+                            <i class="fa-solid fa-paper-plane"></i>phannayorng601@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel: 0911506941">
+                            <i class="fa-solid fa-square-phone"></i>(+855) 10 589 811
+                        </a>
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100071270096409" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/natoch___/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCGIyYM9WHZiAkBOyBbOECIw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/na-toch-280a3a278/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/natochDev/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/MyCV_01.pdf" download class="btn btn-2">
+                        <i class="fa-solid fa-download" style="margin-right: 5px;"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Email Address" required>
+                        <textarea name="Message" rows="6" placeholder="Type your message here..."></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== COPYRIGHT ========== -->
+    <div class="copyright">
+        <p>&#169; 2024 Portfolio | All Rigths Reserved</p>
+        <p>Developed by: <span>Phanna</span> Icons by: <span>Font Awesome</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
